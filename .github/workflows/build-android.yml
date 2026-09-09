@@ -94,7 +94,7 @@ jobs:
         cd android
         echo "=== Building Release APK ==="
         ./gradlew clean
-        ./gradlew assembleRelease --no-build-cache --no-daemon -Pandroid.injected.signing.store.file=my-release-key.keystore -Pandroid.injected.signing.store.password="${{ secrets.KEYSTORE_PASSWORD }}" -Pandroid.injected.signing.key.alias=yixutianse -Pandroid.injected.signing.key.password="${{ secrets.KEYSTORE_PASSWORD }}"
+        ./gradlew assembleRelease --no-build-cache --no-daemon -Pandroid.injected.signing.store.file="$GITHUB_WORKSPACE/android/my-release-key.keystore" -Pandroid.injected.signing.store.password="${{ secrets.KEYSTORE_PASSWORD }}" -Pandroid.injected.signing.key.alias=yixutianse -Pandroid.injected.signing.key.password="${{ secrets.KEYSTORE_PASSWORD }}"
         ls -la app/build/outputs/apk/release/
 
     - name: Build Android Debug APK
