@@ -1,0 +1,8 @@
+{
+  "appId": "com.yixutianse.app",
+  "appName": "意序填色",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "意序填色",
+  "short_name": "意序填色",
+  "package_name": "com.yixutianse.app",
+  "version": "v1.0",
+  "description": "轻量治愈、自由无约束的安卓填色解压创作工具，支持多笔触、智能填色、图片提取线稿与过程回放。",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#171717",
+  "theme_color": "#4BA3A8"
+}
