@@ -46,6 +46,8 @@ public class MainActivity extends AppCompatActivity {
     @SuppressLint("SetJavaScriptEnabled")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        // 启用 SplashScreen（与启动主题 AppTheme.NoActionBarLaunch 配套）
+        SplashScreen.installSplashScreen(this);
         super.onCreate(savedInstanceState);
 
         // 设置沉浸式暗色状态栏与导航栏

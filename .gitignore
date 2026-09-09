@@ -21,3 +21,11 @@ android/local.properties
 npm-debug.log*
 .DS_Store
 Thumbs.db
+
+# Signing secrets (never commit)
+*.keystore
+*.jks
+android/keystore.properties
+
+# Reference project (local only)
+/qitaapp/
